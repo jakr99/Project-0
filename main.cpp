@@ -10,6 +10,16 @@ int main() {
   Match formatting to the sample I/O provided
   Type command "./grade.sh" in the terminal to check your progress
   */
+  int n;
+  cin >> n;
+
+  for (int i = 0; i < n; i++) {
+    int num;
+    cin >> num;
+
+    int t = collatz_total_stopping_time(num);
+    cout << "Total stopping time of " << t << endl;
+  }
 
   return 0;
 }
